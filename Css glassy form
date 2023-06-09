@@ -1,28 +1,89 @@
+
+svg {
+    position: relative;
+    top: 0;
+    max-width: 200px;
+    border-radius: 25px;
+    margin: 60px 470px;
+    height: 450px;
+    box-sizing: border-box;
+    display: block;
+    background-color: #0e4166;
+background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
-}
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;   
+    border-radius: 25px;
+    margin: 60px 470px;
+    background-color: rgba(255, 255, 255, 0.226);
+    backdrop-filter: blur(5px); 
+  }
+  
+  
+  input {
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.523);
+    background: none;
+    cursor: pointer;
+    transition: background-color 1s;
+    transition-timing-function: ease;
+  }
+  input:hover{
+    background-color:#6e4d1e72;
+    border: none;
+  }
+  ::placeholder{
+    color:#6E4C1E;
+  }
+  input:hover::placeholder {
+    color: white; /* Color del placeholder deseado */
+  }
 
-label {
-  margin-bottom: 5px;
-}
 
-input, button {
-  padding: 10px;
-  margin-bottom: 15px;
-  border: none;
-  border-radius: 5px;
-}
+  .glasmorfismo{
+    width: 150px;
+    background-color:none;
+    color: #6E4C1E;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.525);
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    transition: width 2s, background-color 2s;
+    transition-timing-function: ease;
+  }
+  
+  .glasmorfismo:hover {
+    width: 270px;
+    border: none;
+    background-color:#6e4d1e72;
+    color: white;
+  }
 
-button {
-  background-color: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(5px);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
-
-.glasmorfismo:hover {
-  background-color: rgba(255, 255, 255, 0.9);
-}
